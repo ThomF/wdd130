@@ -1,14 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@200&display=swap");
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
+}
+#logo_link {
+  padding-top: 5px;
 }
 nav a {
   text-align: center;
   color: rgb(96, 169, 248);
   text-decoration: none;
+  padding: 35px;
 }
 .logo {
   width: 80px;
+  padding-top: 10px;
 }
 #hero-img {
   width: 100%;
@@ -22,6 +29,9 @@ nav a {
 .button-box {
   text-align: center;
 }
+.card-img {
+  border: 10px solid rgb(0, 67, 105);
+}
 main section {
   text-align: center;
 }
@@ -31,9 +41,15 @@ main section {
 }
 body {
   background-color: rgb(120, 206, 255);
+  font-family: Montserrat;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 header {
   background-color: rgb(0, 55, 87);
+  font-family: Montserrat;
+  font-size: 1em;
 }
 nav a:hover {
   background-color: rgb(29, 147, 215);
@@ -43,11 +59,19 @@ nav a:hover {
   background-color: rgb(120, 206, 255);
   color: white;
   text-decoration: none;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border: 5px;
+  border-radius: 5px;
 }
 .join {
   background-color: rgb(120, 206, 255);
   color: white;
   text-decoration: none;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border: 5px;
+  border-radius: 5px;
 }
 .book:hover {
   background-color: rgb(29, 147, 215);
@@ -57,14 +81,30 @@ nav a:hover {
   background-color: rgb(29, 147, 215);
   color: wheat;
 }
+.rivers-card {
+  margin: 200px 0;
+}
+.camping-card {
+  margin: 200px 0;
+}
+.rapids-card {
+  margin: 200px 0;
+}
+h2 {
+  margin: 0;
+}
 .msg {
   background-color: rgb(120, 206, 255);
+  line-height: 1.5em;
+  padding: 35px;
 }
 footer {
   background-color: rgb(68, 186, 255);
+  padding: 25px 50px;
 }
 .home-title {
   color: white;
+  margin-top: 10px;
 }
 h4 {
   color: white;
@@ -74,6 +114,7 @@ h4 {
 }
 .msg p {
   color: white;
+  padding-bottom: 15px;
 }
 footer h3 {
   color: white;
@@ -90,4 +131,7 @@ footer p {
 }
 footer p a:hover {
   text-decoration: none;
+}
+footer .social img {
+  padding-top: 15px;
 }

@@ -2,10 +2,15 @@ a {
   color: whitesmoke;
   margin: 40px;
   font-size: 1.5em;
+  padding: 25px;
+}
+body {
+  margin: 0;
 }
 h1 {
   color: steelblue;
   text-align: center;
+  margin: 50px 0;
 }
 img {
   width: 80%;
@@ -27,7 +32,12 @@ main p {
   text-align: center;
 }
 
-nav,
+nav {
+  background-color: steelblue;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
 footer {
   background-color: steelblue;
   color: white;
