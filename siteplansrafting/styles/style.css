@@ -180,6 +180,14 @@ h2 {
   grid-row: 6/7;
   box-shadow: 5px 5px 10px rgb(96, 169, 248);
 }
+.msgC {
+  background-color: rgb(120, 206, 255);
+  line-height: 1.5em;
+  padding: 35px;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px rgb(96, 169, 248);
+}
 footer {
   background-color: rgb(68, 186, 255);
   padding: 25px 50px;
