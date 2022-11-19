@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --primary-color: #25d285;
+  --secondary-color: #c2ffad;
+  --accent1-color: #37865a;
+  --accent2-color: rgb(1, 1, 1);
+}
+.d-flex {
+  display: flex;
+}
+#content {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 35px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+video {
+  height: auto;
+  width: auto;
+}
+.fit {
+  object-fit: contain;
+  width: auto;
+}
+#hoodie {
+  zoom: 70%;
+}
+#hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: -100px;
+}
+#hero-arc {
+  height: auto;
+  width: 550%;
+}
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+  width: 101%;
+}
+#hero-box-vid {
+  padding: 10;
+  display: block;
+  margin: 100 auto;
+  max-height: 500%;
+  max-width: 177%;
+}
+#hero-msg {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  margin-top: 100px;
+}
+#hero-msg2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+}
+.img-fade {
+  animation: fadeIn 5s;
+}
+.text-fade {
+  animation: fadeInText 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#hero-msg-salmon {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 150px;
+  text-align: center;
+  font-size: 30px;
+}
+#hero-img {
+  width: 100%;
+}
+#hero-msg h1 {
+  text-align: center;
+}
+#hero-msg h4 {
+  text-align: center;
+  color: whitesmoke;
+}
+.button-box {
+  text-align: center;
+}
+.card-img {
+  border: 10px solid rgb(0, 67, 105);
+  transition: transform 0.5s;
+  box-shadow: 5px 5px 10px rgb(96, 169, 248);
+}
+.card-img:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+main section {
+  text-align: center;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1fr);
+}
+.home-grid-lower {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1fr);
+}
+.welcome-float {
+  position: absolute;
+  left: 220px;
+  top: 250px;
+}
+.hoodie-float {
+  position: absolute;
+  left: 720px;
+  top: 750px;
+}
+.card {
+  background-color: var(--light);
+  padding: 1em;
+  box-shadow: var(--shadow);
+  border-radius: var(--corners);
+}
+#background {
+  height: 725px;
+  background-color: var(--primary-color);
+  grid-column: 1/11;
+  grid-row: 4/9;
+}
+#backSalmon {
+  background-color: rgb(147, 200, 231);
+}
+.card-img {
+  width: 100%;
+}
+.icon {
+  margin-left: 35%;
+}
+body {
+  background-color: var(--primary-color);
+  font-family: Montserrat;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color: var(--accent2-color);
+  font-family: Montserrat;
+  font-size: 1em;
+}
+nav a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.book {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+.join {
+  background-color: rgb(120, 206, 255);
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border: 5px;
+  border-radius: 5px;
+}
+.book:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+}
+.join:hover {
+  background-color: rgb(29, 147, 215);
+  color: wheat;
+}
+.rivers-card {
+  margin: 200px 0;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.margin-main {
+  margin-bottom: -15%;
+}
+.camping-card {
+  margin: 200px 0;
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+.rapids-card {
+  margin: 200px 0;
+  grid-column: 8/10;
+  grid-row: 2/3;
+}
+.mountain {
+  width: 100%;
+  grid-column: 2/7;
+  grid-row: 5/8;
+  box-shadow: 5px 5px 10px rgb(96, 169, 248);
+}
+
+h2 {
+  margin: 0;
+}
+
+.msg {
+  background-color: var(--accent1-color);
+  line-height: 1.5em;
+  padding: 35px;
+  margin-top: 25%;
+  grid-column: 1/5;
+  grid-row: 2/5;
+  box-shadow: 5px 5px 10px var(--secondary-color);
+  border-radius: 1rem;
+}
+.msgC {
+  background-color: rgb(120, 206, 255);
+  line-height: 1.5em;
+  padding: 35px;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 10px rgb(96, 169, 248);
+}
+footer {
+  background-color: var(--primary-color);
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.home-title {
+  color: white;
+  margin-top: 10px;
+}
+.color-effect {
+  animation: color-change 0.3s infinite;
+}
+@keyframes color-change {
+  0% {
+    color: var(--primary-color);
+  }
+  50% {
+    color: var(--secondary-color);
+  }
+  100% {
+    color: var(--primary-color);
+  }
+}
+h4 {
+  color: white;
+}
+.msg h2 {
+  color: white;
+}
+.msg p {
+  color: white;
+  padding-bottom: 15px;
+}
+footer h3 {
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: var(--secondary-color);
+}
+footer p {
+  font-size: 1.2em;
+}
+footer p a:hover {
+  text-decoration: none;
+}
+footer .social img {
+  padding-top: 15px;
+}
+.mt-1 {
+  margin-top: 0.5em;
+}
+.mb-1 {
+  margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 900px) {
+  #hero,
+  .home-grid {
+    display: block;
+    height: auto;
+  }
+  nav,
+  footer {
+    flex-direction: column;
+  }
+  nav a {
+    display: block;
+    padding: 15px;
+  }
+  #hero {
+    margin-top: 0;
+  }
+  #hero-msg {
+    margin-top: 0;
+  }
+  #hero-msg h4 {
+    display: none;
+  }
+  .home-title {
+    font-size: 25px;
+    color: #6f7364;
+  }
+  .rivers-card,
+  .camping-card,
+  .rapids-card {
+    margin: 50px auto;
+    width: 60%;
+  }
+  #background {
+    display: none;
+  }
+  .mountains,
+  .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 25px;
+  }
+}
