@@ -13,7 +13,7 @@
   flex-wrap: wrap;
 }
 .shop {
-  padding: 1.5em;
+  padding: 0.15em;
   justify-content: space-evenly;
 }
 #content {
@@ -151,8 +151,26 @@ main section {
   left: 220px;
   top: 250px;
 }
+.hat-float {
+  position: absolute;
+  left: 100px;
+  top: 250px;
+}
+
+.hd-float {
+  position: absolute;
+  left: 460px;
+  top: 250px;
+}
+.shirt-float {
+  position: absolute;
+  left: 820px;
+  top: 250px;
+}
+
 .vid-float {
   position: absolute;
+  z-index: -1;
 }
 .hoodie-float {
   position: absolute;
@@ -251,6 +269,11 @@ nav a:hover {
   margin: 10px;
   height: 200px;
   width: 250px;
+}
+.shop-hat {
+  position: absolute;
+  left: 220px;
+  top: 250px;
 }
 .shop-background {
   background-image: url();
