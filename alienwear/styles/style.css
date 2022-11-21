@@ -125,13 +125,17 @@ video {
   text-align: center;
 }
 .card-img {
-  border: 3px solid var(--accent1-color);
   transition: transform 0.3s;
-  box-shadow: 5px 5px 10px var(--secondary-color);
-}
-.card-img:hover {
   opacity: 0.8;
   transform: scale(1.1);
+}
+.card-img:hover .text {
+  visibility: visible;
+  opacity: 1;
+}
+.card-img-b {
+  border: 3px solid var(--accent1-color);
+  box-shadow: 5px 5px 10px var(--secondary-color);
 }
 main section {
   text-align: center;
@@ -458,7 +462,35 @@ footer .social img {
   border: 3px solid var(--accent1-color);
   z-index: 9;
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
 
+.text-layer {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: hidden;
+}
+.text {
+  transition: 0.2s;
+  transform: translateY(1em);
+}
 .form-container {
   max-width: 300px;
   padding: 10px;
