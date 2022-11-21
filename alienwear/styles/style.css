@@ -125,7 +125,7 @@ video {
   text-align: center;
 }
 .card-img {
-  border: 10px solid var(--accent1-color);
+  border: 3px solid var(--accent1-color);
   transition: transform 0.3s;
   box-shadow: 5px 5px 10px var(--secondary-color);
 }
@@ -166,6 +166,19 @@ main section {
   position: absolute;
   left: 820px;
   top: 250px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  z-index: 1;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .vid-float {
@@ -431,4 +444,43 @@ footer .social img {
   footer {
     margin-top: 25px;
   }
+}
+
+#cart-item {
+  height: 75px;
+  width: 75px;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  border: 3px solid var(--accent1-color);
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: var(--primary-color);
+}
+
+.form-container .btn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
 }

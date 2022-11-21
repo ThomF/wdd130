@@ -18,22 +18,22 @@
           <a href="shop.html">Store</a>
           <a href="site-plan.html">Site Plan </a>
           <a href="contact.html">About Us!</a>
-          <a>Cart</a>
+          <a class="open-button" onclick="openForm()">Cart</a>
         </nav>
       </header>
 
       </header>
       <main>
  
-      <section id="hero" >
-      <div class=" shop-card hat-float">
+      <section id="hero d-flex" class="hero d-flex shop">
+      <div class=" shop-card d-flex">
         <img
           class="card-img shop-card "
           src="images/hat.png"
           alt="hat"
         />
       </div>
-      <div class=" shop-card hd-float ">
+      <div class=" shop-card d-flex">
         <img
           class="card-img shop-card"
           src="images/shirt.png"
@@ -42,7 +42,7 @@
       </div>
     
    
-      <div class="d-flex shop-card shirt-float">
+      <div class="d-flex shop-card d-flex">
         <img
         class="card-img shop-card "
         src="images/hoodie.png"
@@ -50,17 +50,30 @@
         />
       </div>
       
-      <div id="hero-box">
-        <video
-          id="hero-box-vid"
-          src="images/star_burst.mp4"
-          autoplay
-          muted
-          loop
-        ></video>
-      </div>
+      
       </section>
-    
+    <!--TODO cart pop-->
+
+    <div class="form-popup" id="myForm">
+      <form action="#" class="form-container">
+        <h1>CART</h1>
+        <img id="cart-item" src="images/hoodie.png" />
+        <button type="submit" class="btn">Continue to Payment</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
+
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
     </main>
       <footer>
         <p>Alien &copy; &trade; 2022 - Thomas Fuhriman</p>

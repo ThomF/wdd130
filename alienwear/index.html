@@ -19,7 +19,7 @@
           <a href="shop.html">Store</a>
           <a href="site-plan.html">Site Plan </a>
           <a href="contact.html">About Us!</a>
-          <a>Cart</a>
+          <a class="open-button" onclick="openForm()">Cart</a>
         </nav>
       </header>
       <main class="margin-main">
@@ -67,6 +67,29 @@
             </div>
           </section>
         </section>
+        <!--TODO cart pop-->
+        <button class="open-button" onclick="openForm()">Cart</button>
+
+        <div class="form-popup" id="myForm">
+          <form action="#" class="form-container">
+            <h1>CART</h1>
+            <img id="cart-item" src="images/hoodie.png" />
+            <button type="submit" class="btn">Continue to Payment</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">
+              Close
+            </button>
+          </form>
+        </div>
+
+        <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+        </script>
       </main>
 
       <footer>
