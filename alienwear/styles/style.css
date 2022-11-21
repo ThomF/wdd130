@@ -132,6 +132,7 @@ video {
 .card-img:hover .text {
   visibility: visible;
   opacity: 1;
+  transform: scale(1.1);
 }
 .card-img-b {
   border: 3px solid var(--accent1-color);
