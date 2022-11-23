@@ -126,16 +126,18 @@ video {
 }
 .card-img {
   transition: transform 0.3s;
-  opacity: 0.8;
-  transform: scale(1.1);
-}
-.card-img:hover .text {
-  visibility: visible;
   opacity: 1;
   transform: scale(1.1);
 }
+
+.card-img:hover .text {
+  visibility: visible;
+  opacity: 1;
+
+  transform: scale(1.1);
+}
 .card-img-b {
-  border: 3px solid var(--accent1-color);
+  border: 1.5px solid var(--accent1-color);
   box-shadow: 5px 5px 10px var(--secondary-color);
 }
 main section {
@@ -245,15 +247,7 @@ nav a:hover {
   border-radius: 5px;
   text-align: center;
 }
-.join {
-  background-color: rgb(120, 206, 255);
-  color: white;
-  text-decoration: none;
-  padding: 15px 30px;
-  margin-top: 50px;
-  border: 5px;
-  border-radius: 5px;
-}
+
 .book:hover {
   background-color: var(--secondary-color);
   color: var(--accent1-color);
@@ -283,10 +277,17 @@ nav a:hover {
   grid-row: 3/5;
   grid-column: 1/2;
 }
+
 .shop-card {
+  margin-top: 10px;
   margin: 10px;
   height: 200px;
   width: 250px;
+}
+.shop-card-banner {
+  margin: 10px;
+  height: 200px;
+  width: 1090px;
 }
 .shop-hat {
   position: absolute;
@@ -463,18 +464,6 @@ footer .social img {
   border: 3px solid var(--accent1-color);
   z-index: 9;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: #008cba;
-}
 
 .text-layer {
   color: white;
@@ -482,15 +471,13 @@ footer .social img {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+
   transform: translate(-50%, -50%);
   text-align: center;
   visibility: hidden;
 }
 .text {
   transition: 0.2s;
-  transform: translateY(1em);
 }
 .form-container {
   max-width: 300px;
